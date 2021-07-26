@@ -51,9 +51,6 @@ button {
         display: none !important;
     }
 }
-.modal {
-    padding: 0 !important;
-}
 
 .main_wapper {
     @media (max-width: 767px) {
@@ -707,5 +704,72 @@ button {
         color: #000;
         border: 1px solid #115589;
         @include button-hover(#115589, #fff);
+    }
+}
+
+// modal
+.modal {
+    padding: 0 !important;
+}
+.modal-dialog {
+    height: 90%;
+    margin: 2vw auto;
+    @include flexbox;
+    @include align-items(center);
+    @media (min-width: 576px) {
+        max-width: 100%;
+    }
+}
+.modal-content {
+    padding: 1.5625vw;
+    padding-right: 1.30208vw;
+    padding-top: 4vw;
+    border-radius: 1.5625vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 31.25vw;
+    @media (max-width: 767px) {
+        padding: 30px 23px;
+        width: 95%;
+    }
+}
+.modal-body {
+    padding: 0;
+    @media (max-width: 767px) {
+        padding-top: 45px;
+    }
+}
+.modal {
+    .question {
+        padding: 0;
+    }
+    .question--button {
+        margin: 0;
+        margin-top: 30px;
+        @media (max-width: 767px) {
+            margin-top: 50px;
+            margin-bottom: 0;
+        }
+    }
+    .question--form {
+        max-height: 100%;
+    }
+}
+.close {
+    @include flex_center;
+    float: none;
+    position: absolute;
+    font-size: 2vw;
+    z-index: 1;
+    right: 2vw;
+    top: 1vw;
+    opacity: 1 !important;
+    &:hover {
+        opacity: 0.8 !important;
+    }
+    @media (max-width: 767px) {
+        font-size: 7vw;
+        right: 12px;
+        top: 2px;
     }
 }
