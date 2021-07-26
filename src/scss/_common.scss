@@ -727,7 +727,7 @@ button {
     border-radius: 1.5625vw;
     margin-left: auto;
     margin-right: auto;
-    width: 31.25vw;
+    width: 61vw;
     @media (max-width: 767px) {
         padding: 30px 23px;
         width: 95%;
@@ -753,6 +753,9 @@ button {
     }
     .question--form {
         max-height: 100%;
+        @media (max-width: 767px) {
+            max-height: 51vh;
+        }
     }
 }
 .close {
