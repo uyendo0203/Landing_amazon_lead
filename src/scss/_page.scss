@@ -36,6 +36,10 @@
     @media (max-width: 767px) {
         border-radius: 8px 8px 0 0;
         padding: 0;
+        background-color: #f9f3f3;
+        padding: 25px;
+        padding-right: 15px;
+        border-radius: 20px
     }
 
     &--form {
@@ -93,7 +97,8 @@
         margin-top: vw(30px);
         margin-bottom: vw(50px);
         @media (max-width: 767px) {
-            margin: 20px 0;
+            margin-top: 30px;
+            margin-bottom: 20px;
         }
     }
     &--submit {
@@ -119,8 +124,8 @@
             font-size: 14px;
             height: 40px;
             border-bottom: 2px solid #243040;
+             background-color: transparent;
         }
-
         &:focus {
             border-bottom: vw(2px) solid #243040;
             @media (max-width: 767px) {
@@ -142,7 +147,7 @@
         width: 13.281vw;
         font-size: 1.146vw;
         @media (max-width: 767px) {
-            width: 70px;
+            width: 100px;
             height: auto;
             font-size: 3vw;
             padding: 4px 0 5px 0;
@@ -239,6 +244,7 @@
         @media (max-width: 767px) {
             height: 40px;
             font-size: 4vw;
+
         }
         &::after {
             content: "";
@@ -279,6 +285,7 @@
             @media (max-width: 767px) {
                 border-bottom: 2px solid #2c3e50;
                 font-size: 4vw;
+                background-color: transparent
             }
         }
         /* Remove IE arrow */
@@ -393,7 +400,7 @@
         letter-spacing: vw(-2.5px);
         margin-bottom: vw(10px);
         @media (max-width: 767px) {
-            font-size: 6.5vw;
+            font-size: 5vw;
             margin-bottom: 2vw;
         }
     }
@@ -406,6 +413,9 @@
         @media (max-width: 767px) {
             font-size: 5vw;
             letter-spacing: -1.5px;
+            br{
+                display: none;
+            }
         }
     }
     &__img {
@@ -488,6 +498,25 @@
         }
     }
     .button {
+    }
+}
+.block2{
+    .block-2side__text{
+        @media (max-width: 767px) {
+            order: 2;
+        }
+    }
+    .block-2side__img{
+        @media (max-width: 767px) {
+            margin-top: 20px
+        }
+    }
+    .block-2side__text-title{
+        @media (max-width: 767px) {
+            br{
+                display: none;
+            }
+        }
     }
 }
 .block3 {
