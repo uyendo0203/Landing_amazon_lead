@@ -309,7 +309,7 @@
         @include max-width-mb();
         margin-left: auto;
         margin-right: auto;
-        padding-top: 50px;
+        padding-top: 30px;
         padding-bottom: 0;
     }
     &__heading {
@@ -359,7 +359,7 @@
     &__text-item {
         margin-bottom: vw(20px);
         &:first-child {
-            margin-bottom: 70px;
+            margin-bottom: 30px;
         }
     }
     &__text-label {
@@ -430,6 +430,9 @@
     .img-left {
         .block-2side__text-item {
             margin-bottom: vw(50px);
+            @media (max-width: 767px){
+                margin-bottom: 8.60417vw;
+            }
         }
         .block-2side__text {
             order: 2;
@@ -441,6 +444,12 @@
             @media (max-width: 767px) {
                 margin-bottom: 30px;
             }
+        }
+    }
+    .va-css{
+        margin-top:-1vw;
+        @media (max-width:767px){
+            margin-top:-3vw
         }
     }
 }
@@ -495,6 +504,7 @@
         @media (max-width: 767px) {
             width: 85%;
             margin: 50px auto;
+            margin-bottom: 0
         }
     }
     .button {
