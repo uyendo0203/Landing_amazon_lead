@@ -32,7 +32,7 @@
         "webpack-merge": "^4.2.2"
     },
     "scripts": {
-        "start": "webpack-dev-server --config webpack.common.js --open --mode development --host",
+        "start": "webpack-dev-server --config webpack.common.js --open --mode development --host 192.168.10.108",
         "build": "webpack --config webpack.common.js --mode production",
         "clean": "rimraf dist"
     },

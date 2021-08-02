@@ -370,7 +370,7 @@
         margin-top: 15px;
         @media (max-width: 767px) {
             font-size: 20px;
-            letter-spacing: 1.5px;
+            letter-spacing: -1.5px;
         }
     }
     &__text-number {
@@ -383,12 +383,15 @@
         text-shadow: 0.104vw 0.104vw 0.052vw #935300;
         font-size: vw(90px);
         @media (max-width: 767px) {
-            font-size: 20px;
-            letter-spacing: -1.5px;
-            margin-bottom: 15px;
+            letter-spacing: vw(-1.5px);
+            margin-bottom: 4vw;
             margin-top: vw(5px);
             text-shadow: 1px 1px 1px #935300;
-            font-size: 70px;
+            -webkit-text-shadow: 1px 1px 1px #935300;
+             -moz-text-shadow: 1px 1px 1px #935300;
+            font-size: 14vw;
+            filter: dropshadow(color=#935300, offx=1, offy=1);
+            filter: shadow(color=#935300,direction=135,strength=2);
         }
     }
     &__text-title {
@@ -401,7 +404,7 @@
         margin-bottom: vw(10px);
         @media (max-width: 767px) {
             font-size: 5vw;
-            margin-bottom: 2vw;
+            margin-bottom: 1vw;
         }
     }
     &__text-sub {
@@ -413,9 +416,6 @@
         @media (max-width: 767px) {
             font-size: 5vw;
             letter-spacing: -1.5px;
-            br{
-                display: none;
-            }
         }
     }
     &__img {
@@ -511,6 +511,14 @@
     }
 }
 .block2{
+
+    @media (max-width: 767px) {
+        background: #a5d3ee;
+        max-width: 100%;
+        padding: 30px 7% 20px 7%;
+        margin-top: 50px;
+    }
+
     .block-2side__text{
         @media (max-width: 767px) {
             order: 2;
